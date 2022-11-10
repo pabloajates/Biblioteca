@@ -50,12 +50,15 @@ public class Main {
         System.out.println(user.getAddress());
         System.out.println(user.getPhone());
 
-//Prestamo
-        Prestamo loan = new Prestamo();
-        loan.setFechapres("10/2/2021");
-        loan.setFechadev("20/3/2021");
-        System.out.println(loan.getFechapres());
-        System.out.println(loan.getFechadev());
+        //Prestamo
+        Loan loan = new Loan();
+        loan.setUserData("Paquito");
+        loan.setBookIsbn("BSOSJWOG87");
+        loan.setGiveDate("10/2/2021");
+        System.out.println(loan.getUserData());
+        System.out.println(loan.getBookIsbn());
+        System.out.println(loan.getGiveDate());
+        System.out.println(loan.getReturnDate());
     }
 }
 
